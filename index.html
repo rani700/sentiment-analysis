@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sentiment Analysis</title>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js@2.9.2/dist/Chart.min.js"></script>
+	<script type="text/javascript" src="dist/bundle.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+</head>
+<body>
+<section class="container">
+	<section class="search">
+		<div class="title"><img src="twitter.png" width="30">Sentiment Analysis</div>
+		<input type="text" class="query" placeholder="Enter query for sentiment Analysis">
+		<button class="send_button">Check Sentiment</button>
+	</section>
+	<section class="results">
+		<div>
+			<h2 class="report-title">Sentiment Analysis Report about </h2>
+		</div>
+		<div class="charts">
+			<div class="pie">
+				<canvas id="myChart" width="600" height="400"></canvas>
+			</div>
+		</div>
+		<table border="1">
+			<tr>
+				<th>Tweet</th>
+				<th>Score</th>
+				<th>Analysis</th>
+			</tr>
+		</table>
+		<div>
+			<a href="./"><button class="back_button">New Search</button></a>
+		</div>
+		<br>
+		<br>
+		<br>
+	</section>
+	<section class="loader">
+		<div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+		<div>Analysing...</div>
+
+	</section>
+</section>
+</body>
+</html>
